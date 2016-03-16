@@ -1,0 +1,553 @@
+\documentclass{beamer}
+\usepackage[export]{adjustbox} % For figure frames
+\usepackage{graphicx} % For figures
+\usepackage{xmpmulti} % for gifs
+\usepackage{animate}
+\usepackage{natbib}
+
+% Theme
+\usetheme{Dresden}
+%\usetheme{Malmoe} 
+%\usetheme{Montpellier}
+
+% Colour
+\usecolortheme{beaver} % red and light grey
+%\usecolortheme{dolphin} %lighter blue than normal
+%\usecolortheme{dove} % Black and White
+%\usecolortheme{seahorse} % Pale purple
+
+\setbeamercolor{institute in head/foot}{parent=palette primary}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		\begin{beamercolorbox}[sep=8pt,center]{title}
+			\usebeamerfont{title}\insertsectionhead\par%
+		\end{beamercolorbox}
+		\vfill
+	\end{frame}}
+
+\title{Exploring the possibility of Alternative Splicing as a path to the regulation of LINE-1 elements in human and mouse}
+\author{Brittany Howell}
+\institute{Supervisors: Prof. Dave Adelson and Dr. Dan Kortschak}
+\date{March 17, 2016}
+
+\begin{document}
+	
+	\frame{\titlepage}
+
+		\begin{frame} % Overview
+			
+			\frametitle{Overview}
+			
+			\begin{itemize}
+				\item Background: Transposable Elements (TEs) including L1s
+			\end{itemize}
+			\begin{columns}[c] % Columns are left aligned
+				
+				\begin{column}[T]{.6\textwidth}
+					
+					\begin{figure}
+						\includegraphics[width=\textwidth]{../../Figures/genome-puzzle.png}
+					\end{figure}
+					
+				\end{column}
+			
+			\begin{column}[T]{.55\textwidth}
+				\begin{itemize}
+					\item Regulation of TEs
+					\item Alternative splicing
+					\item Alternative splicing in L1s
+				\end{itemize}
+			\end{column}
+			
+				
+			
+			\end{columns}
+				\end{frame}
+			
+			\section[Background]{Background}
+			
+		\begin{frame} % Exons, Introns and Other
+			
+			\frametitle{The human genome}
+			\framesubtitle{Repetitive elements are abundant in the human genome}
+			
+			\begin{columns}
+				\begin{column}{0.6\linewidth}
+					
+					\begin{figure}
+						\includegraphics[scale=0.3]{../../Figures/Seminar-genome-All.png}			
+					\end{figure}
+				\end{column}
+			
+				\begin{column}{0.4\linewidth}
+					\begin{block}{Other genome content:}
+						Tandem repeats\\
+						Intergenic regions\\
+						Duplications\\
+						Transposable elements
+					\end{block}
+				\end{column}
+			\end{columns}
+	
+			
+			Xu et al. 2010, Singer et al. 2010
+
+		\end{frame}
+		
+		\begin{frame} % Proportion of T Es
+			
+			\frametitle{The human genome}
+			\framesubtitle{Repetitive elements are abundant in the human genome}
+			
+					\begin{figure}
+						\includegraphics[scale=0.3]{../../Figures/Seminar-genome-TE.jpg}
+					\end{figure}
+						Xu et al. 2010, Singer et al. 2010
+		\end{frame}
+		
+		\begin{frame} % Proportion of L1s
+			
+			\frametitle{The human genome}
+			\framesubtitle{Repetitive elements are abundant in the human genome}
+			
+
+			\begin{figure}
+				\includegraphics[scale=0.3]{../../Figures/Seminar-genome-L1s.png}
+			\end{figure}
+			
+			Xu et al. 2010, Singer et al. 2010
+
+		\end{frame}
+		
+		\begin{frame} % L1s description
+			
+			\frametitle{LINE-1 (L1) structure}
+			\framesubtitle{L1s are TEs}
+			
+			\begin{figure}
+				\includegraphics[scale=0.4]{../../Figures/L1-structure.jpg}
+			\end{figure}
+			
+			\begin{block}{L1 structure}
+				\begin{itemize}
+					\item Full length L1s are 6-7kb 
+					\item L1s are often 5' truncated, inverted or degraded
+					\item Some variants are 4kb - HAL1s
+				\end{itemize}
+				
+			\end{block}
+		\end{frame}
+		
+		\begin{frame} % Retrotransposition 1
+			
+			\frametitle{TE replication cycle}
+			\framesubtitle{LINE-1s are retrotransposons}
+
+			\begin{figure}
+				\includegraphics[scale=0.25]{../../Figures/L1-RT-1.png}
+			\end{figure}
+			\begin{itemize}
+				\item L1s replicate through an RNA intermediate
+				\item They integrate anywhere in the genome - interspersed repeats
+			\end{itemize}
+			
+		
+
+		\end{frame}
+	
+		\begin{frame} % Retrotransposition Transcription
+			
+			\frametitle{TE replication cycle}
+			\framesubtitle{LINE-1s are retrotransposons}
+			
+			\begin{figure}
+				\includegraphics[scale=0.25]{../../Figures/L1-RT-2.png}
+			\end{figure}
+			\begin{itemize}
+				\item L1s replicate through an RNA intermediate
+				\item They integrate anywhere in the genome - interspersed repeats
+			\end{itemize}
+			
+		\end{frame}
+		
+		\begin{frame} % Retrotransposition Translation
+			
+			\frametitle{TE replication cycle}
+			\framesubtitle{LINE-1s are retrotransposons}
+			
+			\begin{figure}
+				\includegraphics[scale=0.25]{../../Figures/L1-RT-3.png}
+			\end{figure}
+			\begin{itemize}
+				\item L1s replicate through an RNA intermediate
+				\item They integrate anywhere in the genome - interspersed repeats
+			\end{itemize}
+			
+		\end{frame}
+		
+		\begin{frame} % Retrotransposition Association
+			
+			\frametitle{TE replication cycle}
+			\framesubtitle{LINE-1s are retrotransposons}
+			
+			\begin{figure}
+				\includegraphics[scale=0.25]{../../Figures/L1-RT-4.png}
+			\end{figure}
+			\begin{itemize}
+				\item L1s replicate through an RNA intermediate
+				\item They integrate anywhere in the genome - interspersed repeats
+			\end{itemize}
+			
+		\end{frame}
+		
+		\begin{frame} % Retrotransposition Integration
+			
+			\frametitle{TE replication cycle}
+			\framesubtitle{LINE-1s are retrotransposons}
+			
+			\begin{figure}
+				\includegraphics[scale=0.25]{../../Figures/L1-RT-5.png}
+			\end{figure}
+			\begin{itemize}
+				\item L1s replicate through an RNA intermediate
+				\item They integrate anywhere in the genome - interspersed repeats
+			\end{itemize}
+			
+		\end{frame}
+		
+		\begin{frame} % Retrotransposition Summary
+			
+			\frametitle{TE replication cycle}
+			\framesubtitle{LINE-1s are retrotransposons}
+			
+			\begin{figure}
+				\includegraphics[scale=0.25]{../../Figures/L1-RT-All.png}
+			\end{figure}
+			\begin{itemize}
+				\item L1s replicate through an RNA intermediate
+				\item They integrate anywhere in the genome - interspersed repeats
+			\end{itemize}
+			
+		\end{frame}
+			
+			\section[Regulation of TEs]{Regulation of TEs}
+	
+		\begin{frame} % Regulation intro
+			\frametitle{Regulation of TEs}
+			\framesubtitle{Why is regulation required?}
+			
+%				\begin{columns}[c]
+					
+%					\begin{column}{.3\textwidth}
+%						
+%						\begin{itemize}
+%							\item TEs are highly mutagenic
+%							\item ADD 
+%						\end{itemize}	
+%						
+%					\end{column}
+					
+%					\begin{column}{.7\textwidth}
+						
+						\begin{figure}
+							\includegraphics[width=0.93\linewidth]{../../Figures/L1-insertion.png}
+						\end{figure}	
+						
+%					\end{column}
+%					
+%				\end{columns}
+				
+				
+		\end{frame}		
+	
+		\begin{frame} % Methylation
+			
+			\frametitle{DNA methylation}
+			\framesubtitle{Methylation of DNA is widespread throughout the genome}
+			\begin{columns}
+	
+				\begin{column}{0.5\linewidth}
+		
+			\begin{itemize}
+%				\item Methylation occurs throughout the genome \textit{e.g.} X chromosome inactivation, and TE silencing
+				\item X chromosome inactivation, TE silencing
+%				\item Thought to be the mechanism of TE regulation - absence of methylation correlated with TE accumulation
+				\item Absence of methylation occurs with TE accumulation 
+%				\item DNA methylation levels decrease in primordial germ cells, providing TEs opportunity for replication
+				\item Levels fluctuate in development
+				\item L1s in the female mature gamete aren't fully methylated
+			\end{itemize}
+				\end{column}
+				\begin{column}{0.5\linewidth}
+					\begin{figure}
+						\centering
+						\includegraphics[width=\linewidth]{../../Figures/Methylation.png}
+					\end{figure}
+				\end{column}
+			\end{columns}
+		\end{frame}		
+		
+		\begin{frame} % Other regulation
+			
+			\frametitle{Other regulation}
+			\framesubtitle{Many other mechanisms have been shown to suppress TEs}
+			\begin{columns}
+				\begin{column}{0.4\linewidth}
+					\begin{itemize}
+						\item Histone modifications
+						\begin{itemize}
+							\item Methylation - SETB1
+							\item Ubiquitination
+							\item Acetylation
+						\end{itemize}
+						\item RNA interference
+						\begin{itemize}
+							\item miRNAs
+							\item siRNAs
+							\item piRNAs
+						\end{itemize}
+						\item RNA editases
+						\begin{itemize}
+							\item APOBEC
+						\end{itemize}
+					\end{itemize}
+				\end{column}
+				\begin{column}{0.6\linewidth}
+					\begin{figure}
+						\includegraphics[width=0.6\linewidth]{../../Figures/Epigenetics-title.png}
+					\end{figure}
+					\end{column}
+			\end{columns}
+		\end{frame}	
+		
+%		\begin{frame} % Chromatin modification
+%			
+%			\frametitle{Chromatin modifications}
+%			\begin{itemize}
+%				\item Acetylation, Methylation, Biotinylation
+%				\item H3K9me3 and H3K27me3 are markers of silent chromatin
+%				\item SETB1 was found to be active after the decline of methylation
+%				\item TEs also accumulate when levels of acetylation, biotinylation and ubiquitination are decreased
+%			\end{itemize}
+%		\end{frame}
+		
+		\begin{frame} % mRNA decay
+			
+			\frametitle{mRNA decay}
+			\framesubtitle{Targeting the L1 RNA intermediate}
+			\begin{columns}
+				\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item Targets aberrant transcripts
+			%	\item Non-stop decay and no-go decay
+				\item Nonsense mediated decay 
+				
+				
+			\end{itemize}
+				\end{column}
+				\begin{column}{0.5\linewidth}
+					\includegraphics[width=\textwidth]{../../Figures/mrna-decay-0.png}
+%						\transduration<0-3>{0}
+%						\multiinclude[<+->][format=png, graphics={width=\textwidth}]{}
+	%				\animatevalue{mrna-decay-}{0}{4}
+					%	\animate[loop,controls,width=\textwidth]{12}{mrna-decay-}{0}{4}
+				%	\animate
+				\end{column}
+			\end{columns}
+			\begin{itemize}
+				\item Alternative splice event $\rightarrow$ Premature Termination Codon $\rightarrow$ Target for NMD
+				\item Low coding potential $\rightarrow$ Target for NMD
+			\end{itemize}
+		\end{frame}	
+		
+			\section[Alternative Splicing]{Alternative Splicing}
+			
+		\begin{frame} % A S - Transcription
+			\frametitle{mRNA processing}
+			\framesubtitle{DNA is transcribed to RNA, which is processed to form mature mRNA}
+				
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.3]{../../Figures/AS-processing.png}
+				\end{figure}
+			
+		\end{frame}	
+		
+		\begin{frame} % A S - splice forms
+			\frametitle{mRNA processing}
+			\framesubtitle{Alternative splicing can form multiple splice variants}
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.3]{../../Figures/AS-spliceforms.png}
+			\end{figure}
+			
+		\end{frame}
+
+%		\begin{frame} % Detecting AS
+%			\frametitle{Detecting Alternative Splicing}
+%			\framesubtitle{Technology for the detection of Alternate splicing has advanced significantly}
+%			\begin{itemize}
+%				\item dbEST
+%				\item Microarray
+%				\item RNA-Seq
+%				\item \textit{Ab initio} genomic prediction
+%			\end{itemize}
+%		\end{frame}
+		
+%		\begin{frame}
+			
+%			\frametitle{Alternative Splicing in L1s}
+				
+%				\begin{itemize}
+					%\item 
+%					We 
+%				\end{itemize}
+			
+			
+%		\end{frame}
+		
+		\section{Project Aims}
+		
+%		\begin{frame} % Project 
+%			\frametitle{Project Motivation}
+%			
+%			
+%			
+%			\begin{itemize}
+%				\item I will search for AS in L1s
+%				\item Why? Because it is an indicator of further processing and regulation
+%				\item There is some evidence that L1s are capable of splicing
+%			\end{itemize}
+%			
+%		\end{frame}
+		\begin{frame} %Pipeline
+			\frametitle{Detecting Alternative Splicing in L1 elements}
+			
+			\includegraphics[width=0.9\textwidth]{../../Figures/initial-steps.png}
+		\end{frame}
+		
+		\begin{frame} % How a read makes an alignment file
+			\frametitle{Detecting Alternative Splicing in L1 elements}
+			\framesubtitle{RNA-Seq reads can be aligned to the genome}
+			
+			\vfill
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.9\linewidth]{../../Figures/RNA-Seq-One-Read.png}
+			\end{figure}
+			\vfill
+			\begin{itemize}
+				\item The alignment file will give information about each read
+				\item Genome coordinates, read quality
+%				\item *We will filter for the L1 coordinates to narrow down reads*
+			\end{itemize}
+		\end{frame}
+			
+		\begin{frame} % Many reads making a gene
+				\frametitle{Detecting Alternative Splicing in L1 elements}
+				\framesubtitle{RNA-Seq reads can be aligned to the genome}
+				
+				\vfill
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.9\linewidth]{../../Figures/RNA-Seq-complete-read.png}
+				\end{figure}
+				\vfill
+				\begin{itemize}
+					\item Reads will overlap, indicating where the L1s are
+				\end{itemize}
+			\end{frame}
+			
+		\begin{frame} % Evidence of splicing - Gaps
+				\frametitle{Detecting Alternative Splicing in L1 elements}
+				\framesubtitle{RNA-Seq reads can be aligned to the genome}
+				
+				\vfill
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.9\linewidth]{../../Figures/RNA-Seq-AS-evidence.png}
+				\end{figure}
+				\vfill
+				\begin{itemize}
+					\item If there is a gap, that will suggest that there has been some splicing, 
+				\end{itemize}
+			\end{frame}
+			
+			\begin{frame} % Evidence of splicing - split reads
+				\frametitle{Detecting Alternative Splicing in L1 elements}
+				\framesubtitle{RNA-Seq reads can be aligned to the genome}
+				
+				\vfill
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.9\linewidth]{../../Figures/RNA-Seq-AS-split-reads.png}
+				\end{figure}
+				\vfill
+				\begin{itemize}
+					\item Reads that are split over two locations on the genome with a gap indicate splicing
+				\end{itemize}
+			\end{frame}
+				
+		\begin{frame} %I GV image
+			\frametitle{Read visualisation with IGV} 
+			\includegraphics[width=1\linewidth]{../../Figures/IGV-1a.png}
+		\end{frame}
+			
+		\begin{frame} % Summary
+			\frametitle{Summary}
+			
+			\begin{itemize}
+				\item L1s are the most abundant TEs in the human genome, and we are using them as a candidate for TE regulation
+				\item We know they are regulated by a range of mechanisms
+				\item To start analysis we are looking for evidence of alternative splicing 
+			\end{itemize}
+			\includegraphics[width=0.9\textwidth]{../../Figures/initial-steps.png}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Further analysis}
+			\begin{itemize}
+				\item Investigate if the genome itself has alternatively spliced, retrotransposed L1s
+				\item Comparative analysis; compare the mouse data with human
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Further analysis}
+			\framesubtitle{If there is no evidence for alternative splicing in the genome}
+			\begin{itemize}
+				\item Continue with investigation of the genome, 
+				\begin{itemize}
+					\item Alternative splicing may still be found in the genome, not the transcriptome
+				\end{itemize}
+				\item Continue with investigation in mice
+				\begin{itemize}
+					\item Alternative splicing may still occur in L1 transcripts in other organisms
+				\end{itemize}	
+			\end{itemize}
+		\end{frame}		
+%			\begin{frame} % 
+%				
+%				\frametitle{The human genome}
+%				\framesubtitle{Repetitive elements are abundant in the human genome}
+%				
+%				\begin{column}[T]{.7\textwidth}
+%					\begin{figure}
+%						\includegraphics[scale=0.3]{../../Figures/L1-structure.jpg}
+%					\end{figure}
+%				\end{column}
+%				
+%				\begin{column}[T]{.3\textwidth}
+%					\begin{itemize}
+%						\item 
+%					\end{itemize}
+%					
+%				\end{column}
+%			\end{frame}
+		
+\bibliography{../../literature}
+\end{document}
